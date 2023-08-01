@@ -36,6 +36,7 @@ function openOriginal(event) {
     // console.log(event.code);
     if (event.code === "Escape") {
       instance.close();
+      window.removeEventListener("keydown", onEscKeyPress);
     }
   }
 }
